@@ -1,0 +1,12 @@
+<h1>Lista ksiazek</h1>
+
+<div *ngFor="let ksiazki of ksiazkiArray" class="uk-card uk-card-default uk-width-1-2 uk-margin">
+  <div class="uk-card-header">
+    <h3 class="uk-card-title">{{ksiazki.tytul + ' ' + ksiazki.autor}}</h3>
+  </div>
+  <div class="uk-card-body">
+    <p>Rok wydania: {{ksiazki.rokWydania}}</p>
+    <p>Liczba stron: {{ksiazki.liczbaStron}}</p>
+    <p>Ocena ksiazki: {{ksiazki.ocenaKsiazki}}</p>
+  </div>
+</div>
